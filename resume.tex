@@ -1,0 +1,134 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+% !TeX spellcheck = en
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.52in,right=0.75in,bottom=0.52in]{geometry} % Document margins
+
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
+\usepackage{marvosym}
+\usepackage{graphicx}
+\usepackage{tabu} % Full-width tables
+
+\name{Luc Thevenard}
+\address {
+  \href{mailto:lucthevenard@gmail.com}{lucthevenard@gmail.com}\ \\
+  % \href{https://www.linkedin.com/in/luc-thevenard}{in/luc-thevenard}\ \\
+  \href{https://github.com/lucthev}{github.com/lucthev}
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+  {\bf University of Waterloo} \hfill {Sept '13 -- Apr '18} \\
+  {\em Honours Bachelor of Computer Science} \hfill {3.9 GPA}
+  \vspace{0.5em}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Summary}
+  \vspace {0.5em}
+  \begin{list}{$\cdot$}{\leftmargin=1.0em}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Experience in JavaScript, HTML/CSS, Ruby (Rails); familiar with Python, C, C\texttt{++}, Haskell
+    \item Passion for clean, maintainable software, rich user experiences, and data-informed decision making
+  \end{list}
+  \vspace{0.5em}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+  \begin{rSubsection}{Shopify}
+                     {Ottawa, ON}
+                     {Back End Developer Intern (Partnerships)}
+                     {May -- Sept '17}
+    \item Built a marketplace to match partners to customers, and a platform to send and review quotes
+    \item Developed and evaluated the performance of several partner matching algorithms
+    \item Analyzed customer data, identifying issues in the customer acquisition funnel
+  \end{rSubsection}
+
+  \begin{rSubsection}{Shopify}
+                     {Ottawa, ON}
+                     {Front End Developer Intern (Partnerships)}
+                     {Aug -- Dec '16}
+
+    \item Optimized image loading in the Shopify App Store, improving page speeds by up to 25\%
+    \item Led the front end development of a login portal used by thousands of partners
+    \item Evaluated the impact of user interface changes using A/B testing
+  \end{rSubsection}
+
+  \begin{rSubsection}{Shopify}
+                     {Ottawa, ON}
+                     {Front End Developer Intern (Theme Editor)}
+                     {Jan -- Apr '16}
+    \item Built components of the site theme editor, including adding rich text editing functionality
+    \item Optimized theme editor render times, achieving 60FPS and eliminating UI jank
+    \item Improved client-side debugging capabilities, allowing interface issues to be easily replayed
+  \end{rSubsection}
+
+  \begin{rSubsection}{Indochino Inc.}
+                     {Vancouver, BC}
+                     {Developer Intern}
+                     {May -- Aug '15}
+    \item Profiled application performance, identifying and fixing slow database queries
+    \item Developed the front end for redesigned home and collection page, while improving page speeds
+  \end{rSubsection}
+
+  % \begin{rMinisection}
+  %   \item {\em Other internships/work experiences elided.}
+  % \end{rMinisection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% VOLUNTEER EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Volunteer Experience}
+  \begin{rSubsection}{UW Bike Centre}
+                     {Waterloo, ON}
+                     {Executive}
+                     {Sept '17 -- Apr '18}
+    \item Coordinated with other executives to ensure the objectives of the Bike Centre were being met
+    \item Authored a volunteer onboarding manual and wrote progress reports
+  \end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+  \begin{rSubsection}{collapse-whitespace}{\href{https://git.io/vpRC1}{git.io/vpRC1}}{}{}
+    \item Library for normalizing the representation of HTML, depended on by 20\texttt{+} independent projects
+  \end{rSubsection}
+
+  \begin{rSubsection}{generic-diff}{\href{https://git.io/vpR80}{git.io/vpR80}}{}{}
+    \item Implementation of \textit{An O(ND) Difference Algorithm} for use with arbitrary array-like objects
+  \end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Languages}
+  \setlength\tabcolsep{0pt}
+  \begin{tabu} to \textwidth {X[l] X[l] l}
+    \textbf{English} & \textbf{French} & \textbf{Mandarin} \\
+    Native or bilingual proficiency & Native or bilingual proficiency & Elementary proficiency
+  \end{tabu}
+\end{rSection}
+
+\end{document}
