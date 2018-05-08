@@ -9,7 +9,6 @@
 \usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
 \usepackage{marvosym}
 \usepackage{graphicx}
-\usepackage{tabu} % Full-width tables
 
 \name{Luc Thevenard}
 \address {
@@ -26,7 +25,7 @@
 
 \begin{rSection}{Education}
   {\bf University of Waterloo} \hfill {Sept '13 -- Apr '18} \\
-  {\em Honours Bachelor of Computer Science} \hfill {3.9 GPA}
+  {\em Honours Bachelor of Computer Science} \hfill {91\% CAV}
   \vspace{0.5em}
 \end{rSection}
 
@@ -54,36 +53,36 @@
                      {Ottawa, ON}
                      {Back End Developer Intern (Partnerships)}
                      {May -- Sept '17}
-    \item Built a marketplace to match partners to customers, and a platform to send and review quotes
-    \item Developed and evaluated the performance of several partner matching algorithms
-    \item Analyzed customer data, identifying issues in the customer acquisition funnel
+    \item Built an experimental marketplace to buy and sell services, rapidly prototyping new ideas
+    \item Consulted with partners and analyzed conversion data to identify and fix issues with the product
+    \item Developed several partner matching algorithms, using A/B testing to compare their performance
   \end{rSubsection}
 
   \begin{rSubsection}{Shopify}
                      {Ottawa, ON}
                      {Front End Developer Intern (Partnerships)}
                      {Aug -- Dec '16}
-
-    \item Optimized image loading in the Shopify App Store, improving page speeds by up to 25\%
-    \item Led the front end development of a login portal used by thousands of partners
-    \item Evaluated the impact of user interface changes using A/B testing
+    \item Developed a single sign-on system for partners to log in to stores, simplifying account management and improving merchant security; over 100k accounts created in the first year by over 20k partners
+    \item Designed a system to optimize images uploaded to the Shopify App Store and implemented lazy loading of images, improving page speeds by up to 25\%
+    % \item Evaluated the impact of user interface changes using A/B testing
   \end{rSubsection}
 
   \begin{rSubsection}{Shopify}
                      {Ottawa, ON}
                      {Front End Developer Intern (Theme Editor)}
                      {Jan -- Apr '16}
-    \item Built components of the site theme editor, including adding rich text editing functionality
-    \item Optimized theme editor render times, achieving 60FPS and eliminating UI jank
-    \item Improved client-side debugging capabilities, allowing interface issues to be easily replayed
+    \item Built components of the website theme editor, including adding rich text editing functionality
+    \item Optimized theme editor render times, achieving 60FPS and improving UI responsiveness
+    \item Developed middleware to detect and log changes to application state, enabling easy debugging
   \end{rSubsection}
 
   \begin{rSubsection}{Indochino Inc.}
                      {Vancouver, BC}
                      {Developer Intern}
                      {May -- Aug '15}
-    \item Profiled application performance, identifying and fixing slow database queries
-    \item Developed the front end for redesigned home and collection page, while improving page speeds
+    \item Profiled application performance, identifying and fixing several $n+1$ database queries
+    \item Rewrote home and collection pages as part of a redesign, improving accessibility and page speeds
+    \item Introduced a code style guide and automated linting, preventing errors and increasing consistency
   \end{rSubsection}
 
   % \begin{rMinisection}
@@ -100,8 +99,8 @@
                      {Waterloo, ON}
                      {Executive}
                      {Sept '17 -- Apr '18}
-    \item Coordinated with other executives to ensure the objectives of the Bike Centre were being met
-    \item Authored a volunteer onboarding manual and wrote progress reports
+    \item Coordinated with other executives to set goals for the Bike Centre, and wrote progress reports
+    \item Authored a volunteer handbook detailing policies and procedures, allowing faster onboarding
   \end{rSubsection}
 \end{rSection}
 
@@ -111,24 +110,18 @@
 
 \begin{rSection}{Projects}
   \begin{rSubsection}{collapse-whitespace}{\href{https://git.io/vpRC1}{git.io/vpRC1}}{}{}
-    \item Library for normalizing the representation of HTML, depended on by 20\texttt{+} independent projects
+    \item JavaScript library for normalizing the representation of HTML; over 10k installations per week
   \end{rSubsection}
 
-  \begin{rSubsection}{generic-diff}{\href{https://git.io/vpR80}{git.io/vpR80}}{}{}
-    \item Implementation of \textit{An O(ND) Difference Algorithm} for use with arbitrary array-like objects
+  \begin{rSubsection}{serialize-element}{\href{https://git.io/vpu3l}{git.io/vpu3l}}{}{}
+    % XXX(luc): "abstract" used twice
+    \item Rich text editing library for the web that abstracts over cross-browser inconsistencies
+    \item Provides an abstract data model with an API for performing common rich text editing operations
   \end{rSubsection}
-\end{rSection}
 
-%----------------------------------------------------------------------------------------
-% LANGUAGES SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Languages}
-  \setlength\tabcolsep{0pt}
-  \begin{tabu} to \textwidth {X[l] X[l] l}
-    \textbf{English} & \textbf{French} & \textbf{Mandarin} \\
-    Native or bilingual proficiency & Native or bilingual proficiency & Elementary proficiency
-  \end{tabu}
+  % \begin{rSubsection}{generic-diff}{\href{https://git.io/vpR80}{git.io/vpR80}}{}{}
+  %   \item Fast diffing of arbitrary array-like objects, based on the paper \textit{An O(ND) Difference Algorithm}
+  % \end{rSubsection}
 \end{rSection}
 
 \end{document}
